@@ -1,9 +1,166 @@
+<!-- =========================
+FILE: products.html
+Products Page
+========================= -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to product page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNova - Products</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f1f5f9;
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 10%;
+      background:#111827;
+    }
+
+    .logo{
+      color:#38bdf8;
+      font-size:28px;
+      font-weight:bold;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+    }
+
+    .container{
+      padding:50px 10%;
+    }
+
+    h1{
+      margin-bottom:40px;
+      color:#0f172a;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      border-radius:12px;
+      padding:20px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card img{
+      width:100%;
+      border-radius:10px;
+      margin-bottom:15px;
+    }
+
+    .card h3{
+      margin-bottom:10px;
+      color:#111827;
+    }
+
+    .card p{
+      color:#64748b;
+      margin-bottom:15px;
+    }
+
+    .price{
+      font-size:22px;
+      color:#38bdf8;
+      font-weight:bold;
+    }
+
+    button{
+      margin-top:15px;
+      width:100%;
+      padding:12px;
+      border:none;
+      background:#38bdf8;
+      color:white;
+      border-radius:8px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:#0ea5e9;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to my NEW Django App!</h1>
+
+  <header>
+    <div class="logo">TechNova</div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="account.html">Account</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Featured Products</h1>
+
+    <div class="products">
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Laptop">
+
+        <h3>Gaming Laptop</h3>
+
+        <p>High-performance laptop for gaming and productivity.</p>
+
+        <div class="price">$1499</div>
+
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Phone">
+
+        <h3>Smartphone Pro</h3>
+
+        <p>Latest smartphone with AI camera technology.</p>
+
+        <div class="price">$999</div>
+
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Headphones">
+
+        <h3>Wireless Headphones</h3>
+
+        <p>Crystal-clear audio with noise cancellation.</p>
+
+        <div class="price">$299</div>
+
+        <button>Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
 </body>
 </html>

@@ -1,9 +1,141 @@
+<!-- =========================
+FILE: index.html
+Welcome Page
+========================= -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Filituff Tech - Home</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 10%;
+      background:#111827;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+      color:#38bdf8;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#38bdf8;
+    }
+
+    .hero{
+      height:90vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero h1{
+      font-size:60px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:20px;
+      max-width:700px;
+      margin-bottom:30px;
+      color:#cbd5e1;
+    }
+
+    .search-box{
+      display:flex;
+      width:60%;
+      max-width:700px;
+      background:white;
+      border-radius:50px;
+      overflow:hidden;
+    }
+
+    .search-box input{
+      flex:1;
+      border:none;
+      padding:18px;
+      font-size:16px;
+      outline:none;
+    }
+
+    .search-box button{
+      border:none;
+      padding:18px 30px;
+      background:#38bdf8;
+      color:white;
+      font-size:16px;
+      cursor:pointer;
+    }
+
+    .search-box button:hover{
+      background:#0ea5e9;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#111827;
+      color:#94a3b8;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to my NEW Django App!</h1>
+
+  <header>
+    <div class="logo">Filituff Tech</div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="account.html">Account</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Filituff Tech</h1>
+
+    <p>
+      Discover the latest technology products, gadgets,
+      software, and innovations all in one place.
+    </p>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search tech products...">
+      <button>Search</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Filituff Tech. All rights reserved.
+  </footer>
+
 </body>
 </html>
